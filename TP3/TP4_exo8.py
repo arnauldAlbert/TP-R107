@@ -7,7 +7,7 @@ binome[1]=input("votre nouveau binome est")
 """
 message d'erreur associé
 Traceback (most recent call last):
-  File "/Users/nono/Developpement/Pyhton/TP-R107/TP3/TP3_exo8.py", line 5, in <module>
+  File "/Users/nono/Developpement/Pyhton/TP-R107/TP4/TP4_exo8.py", line 5, in <module>
     binome[1]=input("votre nouveau binome est")
 TypeError: 'tuple' object does not support item assignment
 """
@@ -16,7 +16,7 @@ TypeError: 'tuple' object does not support item assignment
 """ 
 message d'erreur associé
 Traceback (most recent call last):
-  File "/Users/nono/Developpement/Pyhton/TP-R107/TP3/TP3_exo8.py", line 7, in <module>
+  File "/Users/nono/Developpement/Pyhton/TP-R107/TP4/TP4_exo8.py", line 7, in <module>
     del(binome[1])
 TypeError: 'tuple' object doesn't support item deletion
 """
