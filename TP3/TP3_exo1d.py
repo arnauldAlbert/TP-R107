@@ -1,16 +1,13 @@
-count10=0
-count1015 = 0
-count15=0
+N=-1
 
-for i in range(0,10,1):
-    n=-1
-    while (n<0 or n>20):
-        n=int(input("saisr un entier entre 0 et 20"))
-    if n < 10:
-        count10+=1
-    elif n< 15 :
-        count1015 +=1
-    else:
-        count15 += 1
+while (N<=0):
+    N = int(input("saisir un entier positif"))
 
-print(f"nb de valeurs < 10 {count10} \n nb de valeurs entre 10 et 15 {count1015} \n nb de valeurs supérieures {count15}")
+somme = 0
+i=0
+while (somme<=N):
+    i += 1
+    somme+=i
+
+
+print (f"à partir du rang {i-1} la somme des {i-1} premiers entiers ({somme-i}) est inférieure à {N}")

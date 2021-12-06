@@ -27,7 +27,7 @@ tpx["bin3"] = (binome1,binome1)
 #print(tpx)
 
 for i in tpx.items():
-    print(f"Biinome : {i[0]}")
+    print(f"Binome : {i[0]}")
     for j in range(len(i[1])):
         msg = ""
         for k in i[1][j].items():

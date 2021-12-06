@@ -1,13 +1,8 @@
-N=-1
+# boucle d'attente tant que l'uitlisateur n'a pas saisi 100
 
-while (N<=0):
-    N = int(input("saisir un entier positif"))
+n=-1
 
-somme = 0
-i=0
-while (somme<N):
-    i += 1
-    somme+=i
+while n!=100:
+    n=int(input("saisir une valeur entière "))
 
-
-print (f"à partir du rang {i} la somme des {i} premiers entiers ({somme}) est supérieure à {N}")
+print ("bravo, vous savez saisi 100 !!!")
