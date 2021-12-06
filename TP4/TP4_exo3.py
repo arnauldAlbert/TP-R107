@@ -1,9 +1,8 @@
 nMax = 6
 
-while(True):
+n=7
+while(n>nMax):
     n=int(input(f"donnez la taille des vecteurs (<{nMax})"))
-    if n<nMax:
-        break;
 
 v1=[]
 v2=[]

@@ -1,33 +1,26 @@
-import random
+binome = ("moi", "moi2")
 
-N = int(input("entrez le nombre de valeurs du tableau"))
+print(f"l'etudiant {binome[0]} est en binome avec l'étudiant {binome[1]}")
 
-liste=[]
-for i in range(N):
-    liste.append(random.randint(0,100))
-msg = ""
-for i in range(N):
-   msg += str(liste[i])+ " "
-   if i%10==9:
-       msg += "\n"
+#binome[1]=input("votre nouveau binome est")
 
-print(msg)
-for j in range(0,N-1,1):
-    max = j
-    for i in range(j+1,N,1):
-        if liste[i]<liste[max]:
-            max = i
+"""
+message d'erreur associé
+Traceback (most recent call last):
+  File "/Users/nono/Developpement/Pyhton/TP-R107/TP4/TP4_exo7.py", line 5, in <module>
+    binome[1]=input("votre nouveau binome est")
+TypeError: 'tuple' object does not support item assignment
+"""
 
-    temp = liste[max]
-    liste[max] = liste[j]
-    liste[j] = temp
+# del(binome[1])
+""" 
+message d'erreur associé
+Traceback (most recent call last):
+  File "/Users/nono/Developpement/Pyhton/TP-R107/TP4/TP4_exo7.py", line 7, in <module>
+    del(binome[1])
+TypeError: 'tuple' object doesn't support item deletion
+"""
 
-# liste.sort()
-
-msg = ""
-for i in range(N):
-   msg += str(liste[i])+ " "
-   if i%10==9:
-       msg += "\n"
-
-print(msg)
+""" 
+ les tuples sont non mutable, c'est à dire qu'il ne sont plus modifiable une fois créé, contrairement aux listes.
+"""
