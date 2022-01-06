@@ -6,6 +6,9 @@ listedossier = []
 listefiles = []
 fichier =""
 
+
+#
+
 def main(arg):
     if (len(arg) <4):
         print("il manque des arguments \n usage : TP7-exo3 -d répertoire -f fichier")
